@@ -23,19 +23,19 @@ For smoothest installation and running use a python virtual environment.Command 
 
 **On Linux/Ubuntu VERBOSE**
 0. Pip
-	- sudo apt-get install python-pip
+	- `sudo apt-get install python-pip`
 (Optional: work in a virtual environment
-	- pip install virtualenv
-	- pip install virtualenvwrapper
-	- export WORKON_HOME=~/Envs
-	- source /usr/local/bin/virtualenvwrapper.sh)
+	- `pip install virtualenv`
+	- `pip install virtualenvwrapper`
+	- `export WORKON_HOME=~/Envs`
+	- `source /usr/local/bin/virtualenvwrapper.sh)`
 1. In a terminal install the dependencies
-	- 'sudo apt-get install mysql-server'
-	- 'sudo apt-get install mysql-workbench'
+	- `sudo apt-get install mysql-server`
+	- `sudo apt-get install mysql-workbench`
 2. Start the SQL server
-	- 'sudo /etc/init.d/mysql start'
+	- `sudo /etc/init.d/mysql start`
 3. Running MySQL
-	- mysql -u root -p
+	- `mysql -u root -p`
 	- input your password
 
 **MacOS**
@@ -50,11 +50,11 @@ For smoothest installation and running use a python virtual environment.Command 
 
 **ALL**
 1. Create a Database in MySQL
-	- Create DATABASE stumble; CTRL+D
+	- `Create DATABASE stumble;` CTRL+D
 2. Install requirements.txt
-	- pip install -r requirements.txt
+	- `pip install -r requirements.txt`
 3. Create your superuser
-	- python manage.py createsuperuser
+	- `python manage.py createsuperuser`
 4. Visit 127.0.0.1:800 to see the app
 	- /admin is admin page
 
