@@ -29,7 +29,7 @@ For smoothest installation and running use a python virtual environment.Command 
 0. Pip
 	- `sudo apt-get install python-pip`
 	
-(Optional: work in a virtual environment
+(Optional: work in a virtual environment)
 
 	- `pip install virtualenv`
 	- `pip install virtualenvwrapper`
