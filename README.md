@@ -28,11 +28,14 @@ For smoothest installation and running use a python virtual environment.Command 
 
 0. Pip
 	- `sudo apt-get install python-pip`
+	
 (Optional: work in a virtual environment
+
 	- `pip install virtualenv`
 	- `pip install virtualenvwrapper`
 	- `export WORKON_HOME=~/Envs`
 	- `source /usr/local/bin/virtualenvwrapper.sh)`
+	
 1. In a terminal install the dependencies
 	- `sudo apt-get install mysql-server`
 	- `sudo apt-get install mysql-workbench`
