@@ -2,28 +2,61 @@
 
 A web application for finding hidden locations.
 
+# Dependencies
+
+mysql-server
+mysql-workbench
+python-pip
+
+**more in requirements.txt**
+
 # Setup
 
-For smoothest installation and running use a python virtual environment.
- I used https://www.continuum.io/downloads. Command line installer
+For smoothest installation and running use a python virtual environment.Command line installer
  should work fine.
 
+**On Linux/Ubuntu**
+(Optional: work in a virtual environment)
+1. Install dependencies
+2. Set your SQL password to ''
+3. Running MySQL
+
+**On Linux/Ubuntu VERBOSE**
+0. Pip
+	- sudo apt-get install python-pip
+(Optional: work in a virtual environment
+	- pip install virtualenv
+	- pip install virtualenvwrapper
+	- export WORKON_HOME=~/Envs
+	- source /usr/local/bin/virtualenvwrapper.sh)
+1. In a terminal install the dependencies
+	- 'sudo apt-get install mysql-server'
+	- 'sudo apt-get install mysql-workbench'
+2. Start the SQL server
+	- 'sudo /etc/init.d/mysql start'
+3. Running MySQL
+	- mysql -u root -p
+	- input your password
+
+**MacOS**
 1. install mySQL server here:
     - https://dev.mysql.com/downloads/mysql/
+    - `brew install mysql`
     - Save the password given during installation
     - https://dev.mysql.com/downloads/workbench/
     - Start mySQL server
     - Open mySQL workbench, enter password and keep new password blank
 2. In the command line run `mysql -u root`
-3. Then `Create DATABASE stumble;` and `control + D` to exit
-4. Install mysql
-    - `brew install mysql`
-5. Move into django app
-    - `cd stumble`
-6. Install Python requirements
-    - `pip install -r requirements.txt`
-7. Now create a super user with
-    - `python manage.py createsuperuser`
+
+**ALL**
+1. Create a Database in MySQL
+	- Create DATABASE stumble; CTRL+D
+2. Install requirements.txt
+	- pip install -r requirements.txt
+3. Create your superuser
+	- python manage.py createsuperuser
+4. Visit 127.0.0.1:800 to see the app
+	- /admin is admin page
 
 
 # Run
@@ -35,4 +68,14 @@ For smoothest installation and running use a python virtual environment.
 4. Go to http://127.0.0.1:8000/ to visit the app
     - Admin page http://127.0.0.1:8000/admin
 
-Leo Grande
+# Cheatsheets
+MySQL
+
+MySQL Workbench
+https://dev.mysql.com/doc/workbench/en/wb-launching-linux.html
+
+Git
+https://www.git-tower.com/blog/git-cheat-sheet/
+
+Virtual Environments
+http://python-guide-pt-br.readthedocs.io/en/latest/dev/virtualenvs/
