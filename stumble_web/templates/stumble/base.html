@@ -1,0 +1,26 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>stumble | Have You Stumbled on a Great Location Recently?</title>
+
+        {% block head %}
+
+        {% endblock %}
+
+        <link href="{% static 'stumble/assets/css/index.css'%}">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    </head>
+    <body>
+
+    {% block content %}
+
+    {% endblock %}
+
+    </body>
+</html>
