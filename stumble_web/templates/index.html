@@ -1,0 +1,22 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>stumble | Have You Stumbled on a Great Location Recently?</title>
+
+        <link href="{% static 'stumble/assets/css/index.css'%}">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    </head>
+    <body>
+
+    <h1> WELCOME TO STUMBLE</h1>
+    <a href="{% url 'leaflet' %}">Leaf</a>
+    <a href="{% url 'admin:index' %}">admin panel</a>
+
+    </body>
+</html>
