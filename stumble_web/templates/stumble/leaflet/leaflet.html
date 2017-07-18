@@ -1,11 +1,6 @@
-{% extends "stumble/base.html" %}
-{% block head %}
-    {% load leaflet_tags %}
-    {% leaflet_js %}
-    {% leaflet_css %}
-{% endblock %}
-{% block content %}
+{% load leaflet_tags %}
+<div class="map-container">
+    {% leaflet_map "stumble-map" %}
+</div>
 
-    {% leaflet_map "StumbleMap" %}
 
-{% endblock %}
