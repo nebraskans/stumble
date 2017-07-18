@@ -1,0 +1,10 @@
+.map-container{
+    width: 70%;
+    height: 100%;
+    float: right;
+}
+#stumble-map {
+    width: 100%;
+    height: 100%;
+    float: right;
+}

@@ -6,4 +6,4 @@ from django.views.generic import TemplateView
 # Create your views here.
 
 class RenderMap(TemplateView):
-    template_name = 'stumble/leaflet/leaflet.html'
+    template_name = 'stumble/stumble/main.html'
