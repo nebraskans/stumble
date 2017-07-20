@@ -7,3 +7,8 @@ from django.views.generic import TemplateView
 
 class RenderMap(TemplateView):
     template_name = 'stumble/stumble/main.html'
+
+
+class CreateAccount(TemplateView):
+    template_name = 'stumble/accounts/create-account.html'
+

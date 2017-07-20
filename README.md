@@ -5,7 +5,9 @@ A web application for finding hidden locations.
 # Dependencies
 
 mysql-server
+
 mysql-workbench
+
 python-pip
 
 **more in requirements.txt**
@@ -16,19 +18,24 @@ For smoothest installation and running use a python virtual environment.Command 
  should work fine.
 
 **On Linux/Ubuntu**
+
 (Optional: work in a virtual environment)
 1. Install dependencies
 2. Set your SQL password to ''
 3. Running MySQL
 
 **On Linux/Ubuntu VERBOSE**
+
 0. Pip
 	- `sudo apt-get install python-pip`
-(Optional: work in a virtual environment
+	
+(Optional: work in a virtual environment)
+
 	- `pip install virtualenv`
 	- `pip install virtualenvwrapper`
 	- `export WORKON_HOME=~/Envs`
 	- `source /usr/local/bin/virtualenvwrapper.sh)`
+	
 1. In a terminal install the dependencies
 	- `sudo apt-get install mysql-server`
 	- `sudo apt-get install mysql-workbench`
@@ -39,6 +46,7 @@ For smoothest installation and running use a python virtual environment.Command 
 	- input your password
 
 **MacOS**
+
 1. install mySQL server here:
     - https://dev.mysql.com/downloads/mysql/
     - `brew install mysql`
@@ -49,6 +57,7 @@ For smoothest installation and running use a python virtual environment.Command 
 2. In the command line run `mysql -u root`
 
 **ALL**
+
 1. Create a Database in MySQL
 	- `Create DATABASE stumble;` CTRL+D
 2. Install requirements.txt
@@ -60,6 +69,7 @@ For smoothest installation and running use a python virtual environment.Command 
 
 
 # Run
+
 1. On macOS go to settings>>mysql and start server. Windows: IDK
 2. To start Django app run:
     - `python manage.py runserver`
@@ -69,6 +79,7 @@ For smoothest installation and running use a python virtual environment.Command 
     - Admin page http://127.0.0.1:8000/admin
 
 # Cheatsheets
+
 MySQL
 
 MySQL Workbench

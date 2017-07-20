@@ -13,3 +13,4 @@ media
 
 # macOS specific
 .DS_Store
+*.pyc
