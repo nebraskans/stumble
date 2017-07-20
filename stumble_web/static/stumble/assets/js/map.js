@@ -8,7 +8,8 @@
 function initMap() {
 
     var map = L.map('map', {
-        minZoom: 5
+        minZoom: 5,
+        fullscreenControl: true
     }).setView([42.35, -71.08], 13);
 
     var street = L.tileLayer('https://api.mapbox.com/styles/v1/zdepo/cj5aby3930f942rqw45hrltlg/tiles/256/{z}/{x}/{y}?access_token=' +
@@ -24,8 +25,9 @@ function initMap() {
     };
     L.control.layers(baseMaps).addTo(map);
     L.GeoIP.centerMapOnPosition(map, 15);
-
 }
+
+
 
 initMap();
 
