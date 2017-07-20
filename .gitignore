@@ -1,5 +1,5 @@
 # pycharm Specific
-.idea/
+.idea/*
 
 
 # Django
@@ -10,3 +10,6 @@ __pycache__/
 local_settings.py
 db.sqlite3
 media
+
+# macOS specific
+.DS_Store
