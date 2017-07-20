@@ -7,6 +7,7 @@
     {% leaflet_css %}
     <link rel="stylesheet" href="{% static 'stumble/assets/css/map.css' %}" type="text/css">
     <link rel="stylesheet" href="{% static 'stumble/assets/css/sidebar.css' %}" type="text/css">
+    <script src="{% static 'stumble/assets/js/leaflet-geoip.js'%}"></script>
 {% endblock %}
 {% block content %}
 
@@ -15,7 +16,6 @@
         {% include "stumble/sidebar/base.html" %}
 
         {% include "stumble/leaflet/leaflet.html" %}
-
     </div>
 
 
