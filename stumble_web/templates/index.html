@@ -6,17 +6,39 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>stumble | Have You Stumbled on a Great Location Recently?</title>
+        <title>stumble | Have You Stumbled Upon A Great Location Recently?</title>
 
-        <link href="{% static 'stumble/assets/css/index.css'%}">
+        <link rel="stylesheet" href="{% static 'stumble/assets/css/index.css'%}" type="text/css">
+        <link rel="stylesheet" href="{% static 'stumble/assets/css/animate.css'%}" type="text/css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
     </head>
-    <body>
 
-    <h1> WELCOME TO STUMBLE</h1>
-    <a href="{% url 'leaflet' %}">Leaf</a>
-    <a href="{% url 'admin:index' %}">admin panel</a>
+    <body>
+        <div>
+            <h1 class="stumble-header animated fadeIn">stumble</h1>
+        </div>
+
+        <div>
+            <p class="intro-text animated fadeIn"> discover and explore with others</p>
+        </div>
+
+        <div class="submit-text animated fadeIn">
+            <form action=""<br>
+            Username:<br>
+            <input type="text" name="firstname" value="">
+            <br>
+            Password:<br>
+            <input type="text" name="password" value="">
+            <br>
+            <br>
+            <input class="submit-text" type="submit" value="Continue Your Adventure">
+            <br>
+            </form> 
+            <div class="already-text">
+                <a href="">Don't have an account?</a>
+            </div>
+        </div>
 
     </body>
 </html>
