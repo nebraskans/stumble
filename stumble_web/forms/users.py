@@ -8,20 +8,18 @@ class RegistrationUserForm(forms.Form):
         widget=forms.TextInput(attrs=dict(required=True, max_length=30)),
         label=_("Username"),
         error_messages={'invalid': _("This value must contain only letters, numbers and underscores.")},
-        attrs={'class':'form-field'},
 
     )
 
     email = forms.EmailField(
         widget=forms.TextInput(attrs=dict(required=True, max_length=30)),
         label=_("Email address"),
-        attrs={'class':'form-field'},
     )
 
-    password1 = forms.PasswordInput(attrs=dict(required=True, min_length=6, render_value=False), attrs={'class':'form-field'})
+    password1 = forms.PasswordInput(attrs=dict(required=True, min_length=6, render_value=False))
 
     password2 = forms.PasswordInput(attrs=dict(required=True, min_length=6, render_value=False,
-                                               label=_("Password (again)"))attrs={'class':'form-field'})
+                                               label=_("Password (again)")))
 
     def clean_username(self):
         try:
