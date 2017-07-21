@@ -24,13 +24,13 @@
         </div>
 
         <div class="submit-text animated fadeIn">
-            <form method="post">
+            <form method="post" >
                 {% csrf_token %}
                 {{ form.as_p }}
                 <button type="submit">Sign up</button>
             </form>
             <div class="already-text">
-                <a href="">Already have an account?</a>
+                <a href="{% url 'index' %}">Already have an account?</a>
             </div>
         </div>
 

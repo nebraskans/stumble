@@ -8,4 +8,5 @@ urlpatterns = [
     url(r'^$', TemplateView.as_view(template_name='index.html'), name='index'),
     url(r'^leaf', views.RenderMap.as_view(), name='leaflet'),
     url(r'^createaccount', views.signup, name='createaccount'),
+    url(r'^leaf/user/profile', views.UserProfile.as_view(), name='user_profile'),
 ]

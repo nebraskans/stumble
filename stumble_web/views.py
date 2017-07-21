@@ -30,3 +30,6 @@ def signup(request):
         form = UserCreationForm()
     return render(request, 'stumble/accounts/create-account.html', {'form': form})
 
+
+class UserProfile(TemplateView):
+    template_name = 'stumble/sidebar/user/user.html'
