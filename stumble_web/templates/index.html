@@ -24,17 +24,18 @@
         </div>
 
         <div class="submit-text animated fadeIn">
-            <form action=""<br>
-            Username:<br>
-            <input type="text" name="firstname" value="">
-            <br>
-            Password:<br>
-            <input type="text" name="password" value="">
-            <br>
-            <br>
-            <input class="submit-text" type="submit" value="Continue Your Adventure">
-            <br>
-            </form> 
+            <form method="post">
+                {% csrf_token %}
+
+                {% load widget_tweaks %}
+
+                {% render_field form.username class="form-control" %}
+
+                <!-- add/change several attributes -->
+                {% render_field form.password class+="form-control" %}
+
+                <button type="submit">Login</button>
+            </form>
             <div class="already-text">
                 <a href="">Don't have an account?</a>
             </div>

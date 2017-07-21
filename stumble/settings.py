@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'stumble_web',
     'leaflet',
+    'crispy_forms',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -131,3 +132,7 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
     #'/var/www/static/',
 ]
+
+LOGIN_REDIRECT_URL = 'home/'
+
+

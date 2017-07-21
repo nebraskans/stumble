@@ -26,7 +26,8 @@
         <div class="submit-text animated fadeIn">
             <form method="post">
                 {% csrf_token %}
-                {{ form.as_p }}
+                {% load crispy_forms_tags %}
+                {% crispy form %}
                 <button type="submit">Sign up</button>
             </form>
             <div class="already-text">

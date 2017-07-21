@@ -5,11 +5,23 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import login, authenticate
 from django.contrib.auth.forms import UserCreationForm
 from django.shortcuts import render, redirect
+from django.contrib.auth.decorators import login_required
+from .models import User
+from django.contrib.auth.mixins import LoginRequiredMixin
+from django.views import generic
+
 
 # Create your views here.
 
-class RenderMap(TemplateView):
+
+class RenderMap(LoginRequiredMixin, generic.TemplateView):
+    login_url = '/'
+    redirect_field_name = 'redirect_to'
+    model = User
     template_name = 'stumble/stumble/main.html'
+
+    def get_context_data(self, **kwargs):
+        pass
 
 
 class CreateAccount(TemplateView):
