@@ -1,3 +1,4 @@
 Django==1.9.1
 mysqlclient
 django-leaflet
+django-crispy-forms>=1.6.1
