@@ -1,8 +1,40 @@
 {% extends 'stumble/sidebar/base.html' %}
+{% load staticfiles %}
+
 {% block sidecontent %}
 
+<div>
+<h1 class="profile-header">stumble</h1>
+</div>
+<div>
+    <img class="profile-picture" src="{% static 'stumble/assets/images/propicexample.jpg' %}" />
+</div>
+<div>
+    <h3 class="profile-name">
+        FirstName LastName <br>
+        @username
+    </h3>
+</div>
+<div class="profile-statistics">
+    <p>
+        <br>
+        <br>
+        Following: #  |  Followers: # <br> 
+        Locations: #  |  Check-Ins: #
+    </p>
+</div>
+<div>
+    <br>
+    <br>
+    <p class="profile-links">
+    <a href=""> Feeds </a> <br>
+    <a href=""> Filters </a> <br>
+    <a href=""> Locations </a> <br>
+    <a href=""> Settings </a> <br>
+    </p>
+</div>
 
-<h1>account</h1>
+
 
 
 {% endblock %}
