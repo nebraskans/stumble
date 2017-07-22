@@ -13,9 +13,16 @@
 
     <div class="full-container">
 
-        {% include "stumble/sidebar/base.html" %}
+        {% block sidebar%}
 
-        {% include "stumble/leaflet/leaflet.html" %}
+        {% endblock %}
+
+        <div class="map-container">
+
+            <div id="map"></div>
+
+        </div>
+
     </div>
 
 

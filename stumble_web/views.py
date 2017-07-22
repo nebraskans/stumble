@@ -8,9 +8,6 @@ from django.shortcuts import render, redirect
 
 # Create your views here.
 
-class RenderMap(TemplateView):
-    template_name = 'stumble/stumble/main.html'
-
 
 class CreateAccount(TemplateView):
     template_name = 'stumble/accounts/create-account.html'
@@ -30,3 +27,10 @@ def signup(request):
         form = UserCreationForm()
     return render(request, 'stumble/accounts/create-account.html', {'form': form})
 
+
+class UserProfile(TemplateView):
+    template_name = 'stumble/sidebar/user/user.html'
+
+
+class PlacesNearMe(TemplateView):
+    template_name = 'stumble/sidebar/places/near-me.html'
