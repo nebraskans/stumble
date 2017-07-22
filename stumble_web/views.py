@@ -16,6 +16,7 @@ from django.http import HttpResponseRedirect
 # Create your views here.
 
 
+
 class RenderMap(LoginRequiredMixin, generic.TemplateView):
     login_url = '/'
     redirect_field_name = 'redirect_to'
@@ -92,3 +93,10 @@ def signup(request):
         form = UserCreationForm()
     return render(request, 'stumble/accounts/create-account.html', {'form': form})
 
+
+class UserProfile(TemplateView):
+    template_name = 'stumble/sidebar/user/user.html'
+
+
+class PlacesNearMe(TemplateView):
+    template_name = 'stumble/sidebar/places/near-me.html'

@@ -18,14 +18,13 @@ class RegistrationUserForm(forms.Form):
         widget=forms.TextInput(attrs=dict(required=True, max_length=40)),
         label="First Name",
         error_messages={'invalid': "This value must contain only letters, numbers and underscores."},
-
     )
+
     last_name = forms.RegexField(
         regex=r'^\w+$',
         widget=forms.TextInput(attrs=dict(required=True, max_length=40)),
         label="Last Name",
         error_messages={'invalid': "This value must contain only letters, numbers and underscores."},
-
     )
 
     email = forms.EmailField(

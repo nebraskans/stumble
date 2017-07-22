@@ -24,11 +24,16 @@
         </div>
 
         <div class="submit-text animated fadeIn">
-            <form method="post">
+            <form method="post" >
                 {% csrf_token %}
                 {% load crispy_forms_tags %}
                 {% crispy form %}
             </form>
+
+            <div class="already-text">
+                <a href="{% url 'index' %}">Already have an account?</a>
+            </div>
+
         </div>
 
     </body>
